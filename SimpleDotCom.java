@@ -1,6 +1,7 @@
 public class SimpleDotCom {
     int[] locationCells;
     int numOfHits = 0;
+    boolean isAlive = true;
 
 
     public void setLocationCells(int[] loc) {
@@ -19,6 +20,7 @@ public class SimpleDotCom {
         }
         if (numOfHits == locationCells.length) {
             result = "kill";
+            isAlive = false;
         }
         System.out.println(result);
         return result;
